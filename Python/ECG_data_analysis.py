@@ -43,7 +43,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import filtfilt, freqz
 from scipy.fftpack import fft
-from Glia_ECG_Filters import baseline_filter, notch_filter, low_pass_filter
+from Glia_ECG_filters import baseline_filter, notch_filter, low_pass_filter
 
 
 def load_dataset(filename):
