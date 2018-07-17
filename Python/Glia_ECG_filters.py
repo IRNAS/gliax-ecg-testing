@@ -39,7 +39,7 @@ relevant.
 import os
 os.chdir(r'')			# insert the path to working directory
 
-from scipy.signal import cheby2
+from scipy.signal import cheby2, butter
 from iirnotch import design_notch_peak_filter
 
 sf = 488
