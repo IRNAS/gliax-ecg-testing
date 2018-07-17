@@ -121,7 +121,7 @@ def filter_signal(ecg_lead, plot_signals = False, plot_filters = False, plot_sig
     sf = 488.
     b_baseline, a_baseline = baseline_filter(2, 40, 0.2, sf)
     b_notch, a_notch = notch_filter(50, sf, 15)
-    b_low_pass, a_low_pass = low_pass_filter(2, 20, 375., sf)
+    b_low_pass, a_low_pass = low_pass_filter(2, 150., sf)
     
     baseline = filtfilt(b_baseline, a_baseline, ecg_lead)
     notch = filtfilt(b_notch, a_notch, baseline)
