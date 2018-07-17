@@ -83,10 +83,9 @@ def notch_filter( notch_freq, sf, Q):
 
 def low_pass_filter( order, fc, sf):
     """
-    Low pass Chebyshev Type II IIR filter.
+    Low pass butterworth IIR filter.
     
     order = filter order
-    ripple = attenuation in dB at cutoff frequency
     fc = cutoff frequency
     sf = sampling frequency
     
