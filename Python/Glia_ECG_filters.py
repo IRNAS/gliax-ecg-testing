@@ -81,7 +81,7 @@ def notch_filter( notch_freq, sf, Q):
 
 #%% Low pass filter
 
-def low_pass_filter( order, ripple, fc, sf):
+def low_pass_filter( order, fc, sf):
     """
     Low pass Chebyshev Type II IIR filter.
     
@@ -91,5 +91,5 @@ def low_pass_filter( order, ripple, fc, sf):
     sf = sampling frequency
     
     """
-    b, a = cheby2(order, ripple, fc/sf, 'low')
+    b, a = butter(order, fc/sf, 'low')
     return b, a 
